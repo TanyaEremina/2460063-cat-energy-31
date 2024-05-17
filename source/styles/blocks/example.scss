@@ -2,12 +2,44 @@
   position: relative;
 }
 
-.example__price-text {
+.example__table {
+  margin-bottom: 13px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+.example__price {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 174px;
+    text-align: right;
+    position: absolute;
+    top: 11px;
+    left: 532px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: right;
+    display: flex;
+    gap: 63px;
+    width: 100%;
+  }
+}
+
+.example__price-text,
+.example__price-sum {
   font-family: $secondary-font;
   font-size: 14px;
   line-height: 20px;
   color: $color-black;
   text-align: center;
+  text-transform: uppercase;
 
   @media (min-width: 768px) {
     font-size: 20px;
@@ -15,7 +47,17 @@
   }
 }
 
+
+.example_photo {
+  display: flex;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 74px;
+  }
+}
+
 .example__slider-button {
+  padding: 0;
   background-color: $dirty-gray;
   width: 4px;
   height: 256px;
@@ -23,13 +65,13 @@
   border-radius: 2px;
   display: block;
   position: absolute;
-  top: 180px;
-  left: 145px;
+  top: 130px;
+  left: 137px;
   cursor: pointer;
 
-  @media (min-width: 768px) {
-    top: 235px;
-    left: 555px;
+  @media (min-width: $tablet-width) {
+    top: 177px;
+    left: 352px;
     height: 512px;
   }
 }
@@ -50,7 +92,13 @@
   width: 40px;
   height: 40px;
   position: absolute;
-  left: -15px;
+  left: -18px;
+  top: 110px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    top: 235px;
+  }
 }
 
 .example__slider-button:hover::before {
@@ -68,12 +116,12 @@
   width: 24px;
   height: 18px;
   position: absolute;
-  top: 140px;
-  left: -5px;
+  top: 120px;
+  left: -9px;
 
-  @media (min-width: 768px) {
-    top: 269px;
-    left: -6px;
+  @media (min-width: $tablet-width) {
+    top: 245px;
+    left: -10px;
   }
 }
 

@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Кэт энерджи</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="icon" href="favicon.ico">
@@ -27,6 +28,7 @@
         <button class="header-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
           <svg class="header-nav__menu" width="24" height="24">
+            <title class="visually-hidden">Открытьь меню</title>
             <use href="../../icons/stack.svg#burger"></use>
           </svg>
         </button>
@@ -36,8 +38,8 @@
               Главная
             </a>
           </li>
-          <li class="header-nav__item">
-            <a class="header-nav__item-link header-nav__item--current" href="catalog.html">
+          <li class="header-nav__item header-nav__item--current">
+            <a class="header-nav__item-link" href="catalog.html">
               Каталог продукции
             </a>
           </li>
@@ -51,9 +53,9 @@
     </header>
   </div>
   <main class="main-container">
-    <h1 class="title">Каталог продукции</h1>
     <section class="catalog">
       <div class="catalog__wrapper">
+        <h1 class="catalog__title title">Каталог продукции</h1>
         <ul class="catalog__list">
           <li class="catalog__list-item catalog-card">
             <a class="catalog-card__link-img" href="#">
@@ -108,7 +110,7 @@
               </picture>
             </a>
             <a class="catalog-card__link" href="#">
-              <h3 class="catalog-card__title">Cat Energy PROCat Energy PRO 500 г</h3>
+              <h3 class="catalog-card__title">Cat Energy PRO 500 г</h3>
             </a>
             <div class="catalog-card__desc">
               <dl class="catalog-card__desc-list desc-list">
@@ -131,7 +133,7 @@
               </picture>
             </a>
             <a class="catalog-card__link" href="#">
-              <h3 class="catalog-card__title">Cat Energy PROCat Energy PRO 1000 г</h3>
+              <h3 class="catalog-card__title">Cat Energy PRO 1000 г</h3>
             </a>
             <div class="catalog-card__desc">
               <dl class="catalog-card__desc-list desc-list">
@@ -222,47 +224,48 @@
       </div>
     </section>
     <section class="additional-product">
-      <div class="additional-product__wrapper"></div>
-      <h2 class="subtitle">Дополнительные товары</h2>
-      <div class="additional-product__item box-additional">
-        <dl class="box-additional__list">
-          <dt class="box-additional__list-product">сахарозаменитель</dt>
-          <dd class="box-additional__list-characteristics">1 упаковка (100 г)</dd>
-          <dd class="box-additional__list-characteristics">200 ₽</dd>
-        </dl>
-        <button class="box-additional__button button" type="button">заказать</button>
-      </div>
-      <div class="additional-product__item box-additional">
-        <dl class="box-additional__list">
-          <dt class="box-additional__list-product">питьевая вода</dt>
-          <dd class="box-additional__list-characteristics">5 литров</dd>
-          <dd class="box-additional__list-characteristics">50 ₽</dd>
-        </dl>
-        <button class="box-additional__button button" type="button">заказать</button>
-      </div>
-      <div class="additional-product__item box-additional">
-        <dl class="box-additional__list">
-          <dt class="box-additional__list-product">молоко</dt>
-          <dd class="box-additional__list-characteristics">1 литр</dd>
-          <dd class="box-additional__list-characteristics">100 ₽</dd>
-        </dl>
-        <button class="box-additional__button button" type="button">заказать</button>
-      </div>
-      <div class="additional-product__item box-additional">
-        <dl class="box-additional__list">
-          <dt class="box-additional__list-product">витамины</dt>
-          <dd class="box-additional__list-characteristics">1 упаковка (30 г)</dd>
-          <dd class="box-additional__list-characteristics">300 ₽</dd>
-        </dl>
-        <button class="box-additional__button button" type="button">заказать</button>
-      </div>
-      <div class="additional-product__aside">
-        <p class="additional-product__aside-text">Закажите все и получите чехол для кота в подарок!</p>
+      <div class="additional-product__wrapper">
+        <h2 class="additional-product__subtitle subtitle">Дополнительные товары</h2>
+        <div class="additional-product__item box-additional">
+          <dl class="box-additional__list">
+            <dt class="box-additional__list-product">сахарозаменитель</dt>
+            <dd class="box-additional__list-value">1 упаковка (100 г)</dd>
+            <dd class="box-additional__list-price">200 ₽</dd>
+          </dl>
+          <button class="box-additional__button button" type="button">заказать</button>
+        </div>
+        <div class="additional-product__item box-additional">
+          <dl class="box-additional__list">
+            <dt class="box-additional__list-product">питьевая вода</dt>
+            <dd class="box-additional__list-value">5 литров</dd>
+            <dd class="box-additional__list-price">50 ₽</dd>
+          </dl>
+          <button class="box-additional__button button" type="button">заказать</button>
+        </div>
+        <div class="additional-product__item box-additional">
+          <dl class="box-additional__list">
+            <dt class="box-additional__list-product">молоко</dt>
+            <dd class="box-additional__list-value">1 литр</dd>
+            <dd class="box-additional__list-price">100 ₽</dd>
+          </dl>
+          <button class="box-additional__button button" type="button">заказать</button>
+        </div>
+        <div class="additional-product__item box-additional">
+          <dl class="box-additional__list">
+            <dt class="box-additional__list-product">витамины</dt>
+            <dd class="box-additional__list-value">1 упаковка (30 г)</dd>
+            <dd class="box-additional__list-price">300 ₽</dd>
+          </dl>
+          <button class="box-additional__button button" type="button">заказать</button>
+        </div>
+        <div class="additional-product__aside">
+          <p class="additional-product__aside-text">Закажите все и получите чехол для кота в подарок!</p>
+        </div>
       </div>
     </section>
     <section class="subscription">
       <div class="subscription__wrapper">
-        <h2 class="subtitle">Акции и новинки</h2>
+        <h2 class="subscription__subtitle subtitle">Акции и новинки</h2>
         <p class="subscription__text">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
         <form class="subscription__forms form" action="https://echo.htmlacademy.ru" method="post">
           <label class="form__caption">
@@ -278,8 +281,7 @@
       <div class="footer__maps maps">
         <aside class="maps__aside">
           <p class="maps__aside-invite">приглашаем к сотрудничеству дилеров!</p>
-          <p class="maps__aside-text">ул. Большая Конюшенная, д. 19/8</p>
-          <p class="maps__aside-text">Санкт-Петербург</p>
+          <p class="maps__aside-text">ул. Большая Конюшенная, д. 19/8<br>Санкт-Петербург</p>
         </aside>
         <picture>
           <source type="image/jpeg" media="(min-width: 1440px)" width="1440" height="400" srcset="images/index/desktop/map_desktop@1x.jpg 1x, images/index/desktop/map_desktop@2x.jpg 2x">
@@ -287,29 +289,37 @@
           <img class="maps__image" src="images/index/mobile/map_mobile@1x.jpg" srcset="images/index/mobile/map_mobile@2x.jpg 2x" width="320" height="362" alt="Расположение офиса на карте">
         </picture>
       </div>
-      <div class="footer__logo">
-        <a class="logo-energy" href="index.html">
-          <img src="images/general/logo-text.svg" width="128" height="24" alt="Логотип Cat Energy">
-        </a>
-      </div>
-      <div class="footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__item-link-vk" href="https://vk.com/htmlacademy" target="_blank" rel="noreferrer noopener">
-              <span class="visually-hidden">Вконтакте</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__item-link-youtube" href="https://www.youtube.com/user/htmlacademyru" target="_blank" rel="noreferrer noopener">
-              <span class="visually-hidden">Ютуб</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__item-link-tg" href="https://t.me/htmlacademy" target="_blank" rel="noreferrer noopener">
-              <span class="visually-hidden">Телеграм</span>
-            </a>
-          </li>
-        </ul>
+      <div class="footer__contacts contacts">
+        <div class="contacts__logo">
+          <a class="logo-energy" href="index.html">
+            <img src="images/general/logo-text.svg" width="128" height="24" alt="Логотип Cat Energy">
+          </a>
+        </div>
+        <div class="contacts__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__item-link-vk" href="https://vk.com/htmlacademy" target="_blank" rel="noreferrer noopener">
+                <span class="visually-hidden">Вконтакте</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__item-link-youtube" href="https://www.youtube.com/user/htmlacademyru" target="_blank" rel="noreferrer noopener">
+                <span class="visually-hidden">Ютуб</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__item-link-tg" href="https://t.me/htmlacademy" target="_blank" rel="noreferrer noopener">
+                <span class="visually-hidden">Телеграм</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="contacts__logo-academy">
+          <a class="contacts__logo-academy-text" href="https://htmlacademy.ru/" target="_blank" rel="noreferrer noopener">HTML-Academy
+          </a>
+          <a class="contacts__logo-academy-icon" href="https://htmlacademy.ru/" target="_blank" rel="noreferrer noopener"><span class="visually-hidden">HTML-Academy</span>
+          </a>
+        </div>
       </div>
       <div class="footer__logo-academy">
         <a class="footer__logo-academy-text" href="https://htmlacademy.ru/" target="_blank" rel="noreferrer noopener">HTML-Academy
