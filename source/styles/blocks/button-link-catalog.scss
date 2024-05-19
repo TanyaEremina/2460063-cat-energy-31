@@ -5,6 +5,7 @@
   color: $color-black;
   text-decoration: none;
   text-transform: uppercase;
+  position: relative;
 
   @media (min-width: 768px) {
     font-size: 20px;
@@ -14,17 +15,25 @@
 
 .button-link-catalog::after {
   content: " ";
-  background-image: url("../../../../icons/stack.svg#burger");
+  background-image: url("../../../../icons/stack.svg#icon-arrow");
   width: 24px;
   height: 12px;
   position: absolute;
-  top: 230px;
-  left: 115px;
+  top: 1px;
+  left: 101px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    top: 296px;
-    left: 185px;
+    top: 9px;
+    left: 132px;
   }
+}
+
+.button-link-catalog:active {
+  opacity: 30%;
+}
+
+.button-link-catalog:active::after {
+  opacity: 30%;
 }

@@ -11,24 +11,18 @@
 }
 
 .example__price {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
+  margin: 0 auto 20px;
 
   @media (min-width: $tablet-width) {
     display: block;
     width: 174px;
     text-align: right;
-    position: absolute;
-    top: 11px;
-    left: 532px;
   }
 
   @media (min-width: $desktop-width) {
-    text-align: right;
-    display: flex;
-    gap: 63px;
     width: 100%;
+    display: block;
+    text-align: left;
   }
 }
 
@@ -47,88 +41,9 @@
   }
 }
 
-
-.example_photo {
-  display: flex;
-
-  @media (min-width: $tablet-width) {
-    padding: 0 74px;
+.example__price-text {
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    margin-right: 63px;
   }
-}
-
-.example__slider-button {
-  padding: 0;
-  background-color: $dirty-gray;
-  width: 4px;
-  height: 256px;
-  border: none;
-  border-radius: 2px;
-  display: block;
-  position: absolute;
-  top: 130px;
-  left: 137px;
-  cursor: pointer;
-
-  @media (min-width: $tablet-width) {
-    top: 177px;
-    left: 352px;
-    height: 512px;
-  }
-}
-
-.example__slider-button:hover {
-  background-color: $green;
-}
-
-.example__slider-button:active {
-  opacity: 60%;
-}
-
-.example__slider-button::before {
-  content: " ";
-  background-color: $color-white;
-  border: 2px solid $dirty-gray;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  left: -18px;
-  top: 110px;
-  box-sizing: border-box;
-
-  @media (min-width: $tablet-width) {
-    top: 235px;
-  }
-}
-
-.example__slider-button:hover::before {
-  border-color: $green;
-}
-
-.example__slider-button:active::before {
-  opacity: 60%;
-}
-
-.example__slider-button::after {
-  content: " ";
-  mask-image: url("../../../../icons/stack.svg#slider");
-  background-color: $dirty-gray;
-  width: 24px;
-  height: 18px;
-  position: absolute;
-  top: 120px;
-  left: -9px;
-
-  @media (min-width: $tablet-width) {
-    top: 245px;
-    left: -10px;
-  }
-}
-
-.example__slider-button:hover::after {
-  background-color: $green;
-}
-
-.example__slider-button:active::after {
-  opacity: 60%;
 }

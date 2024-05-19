@@ -3,14 +3,16 @@
   min-width: 280px;
   width: 100%;
   box-sizing: border-box;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    min-width: 738px;
+    min-width: 708px;
     padding: 0 30px;
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 1330px;
-    padding: 0 110px;
+    max-width: 1220px;
+    margin: 0 auto;
+    box-sizing: content-box;
   }
 }

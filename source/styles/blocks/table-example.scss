@@ -13,6 +13,10 @@
     line-height: 37px;
     padding: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 11px;
+  }
 }
 
 .table-example__item {
@@ -23,7 +27,8 @@
   @media (min-width: $tablet-width) {
     min-width: 162px;
     padding-top: 15px;
-    position: relative;
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -31,15 +36,18 @@
   text-align: center;
   margin: 0;
   background-color: $light-gray;
-  width: 90px;
-  margin-left: 13px;
+  width: 59px;
+  margin-left: 32px;
 
   @media (min-width: $tablet-width) {
-    position: absolute;
-    top: 62px;
-    left: 3px;
-    min-width: 125px;
+    margin-left: 0;
     background-color: $color-white;
+    align-self: center;
+    min-width: 125px;
+  }
+
+  @media (min-width: $tablet-width) {
+    background-color: $light-gray;
   }
 }
 
@@ -47,23 +55,21 @@
 .table-example__list {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0 0 20px;
   display: flex;
   gap: 20px;
-  margin-bottom: 20px;
   justify-content: space-between;
-
 
   @media (min-width: $tablet-width) {
     margin-right: 167px;
     gap: 43px;
-    margin-bottom: 99px;
+    margin-bottom: 102px;
   }
 
   @media (min-width: $desktop-width) {
     margin-right: 0;
     gap: 42px;
-    margin-bottom: 55px;
+    margin-bottom: 62px;
     justify-content: flex-start;
   }
 }

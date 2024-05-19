@@ -47,14 +47,12 @@
   color: $dark-grey;
   font-size: 16px;
   line-height: 20px;
+  display: block;
+  align-self: center;
 
   @media (min-width: $tablet-width) {
     margin-right: 23px;
     align-self: center;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-right: 50px;
   }
 }
 
