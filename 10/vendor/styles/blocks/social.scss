@@ -1,0 +1,60 @@
+.social__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 28px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 125px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    margin-right: 381px;
+  }
+}
+
+.social__item-link-vk {
+  display: block;
+  mask-image: url("../../../../icons/stack.svg#vk");
+  background-color: $dirty-gray;
+  width: 27px;
+  height: 17px;
+}
+
+.social__item-link-youtube {
+  display: block;
+  mask-image: url("../../../../icons/stack.svg#youtube");
+  background-color: $dirty-gray;
+  width: 24px;
+  height: 19px;
+}
+
+.social__item-link-tg {
+  display: block;
+  mask-image: url("../../../../icons/stack.svg#tg");
+  background-color: $dirty-gray;
+  width: 20px;
+  height: 17px;
+}
+
+.social__item-link-vk:hover,
+.social__item-link-youtube:hover,
+.social__item-link-tg:hover {
+  background-color: $green;
+}
+
+.social__item-link-vk:active,
+.social__item-link-youtube:active,
+.social__item-link-tg:active {
+  background-color: $green;
+  opacity: 30%;
+}
+
+.social__item-link-vk:focus,
+.social__item-link-youtube:focus,
+.social__item-link-tg:focus {
+  background-color: $green;
+  opacity: 30%;
+}
