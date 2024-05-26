@@ -8,6 +8,9 @@
   @media (min-width: $desktop-width) {
     &::before {
       content: "";
+      background-color: $background-cat;
+      background-position: 0 0;
+
       background-image: linear-gradient($green-transparent, $green-transparent), url("../../images/index/desktop/index-background-desktop.png");
       background-repeat: no-repeat;
       height: 694px;
@@ -42,6 +45,7 @@
 
 .programs__wrapper::before {
   content: "";
+  background-color: $background-cat;
   background-image: linear-gradient($green-transparent, $green-transparent), url("../../images/index/mobile/index-background-desktop_2.jpg");
   background-repeat: no-repeat;
 

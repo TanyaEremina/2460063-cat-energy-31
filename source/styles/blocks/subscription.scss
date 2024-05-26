@@ -15,12 +15,12 @@
 }
 
 .subscription__subtitle {
-  margin-bottom: 32px;
   font-size: 24px;
   line-height: 24px;
   position: relative;
-  width: fit-content;
+  padding-bottom: 35px;
   background-color: $color-white;
+  width: fit-content;
   box-shadow: 40px 0 0 0 $color-white;
 
   &::after {
@@ -32,6 +32,7 @@
     left: 0;
     position: absolute;
     box-shadow: 50vw 0 0 0 $green;
+    z-index: -1;
   }
 
   @media (min-width: $tablet-width) {
