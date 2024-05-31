@@ -11,11 +11,13 @@
   padding-bottom: 21px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 37px 32px;
+    padding: 0 37px 33px;
+    width: 250px;
   }
 
   @media (min-width: $desktop-width) {
-
+    padding: 0 38px 33px;
+    width: 169px;
   }
 }
 
@@ -23,9 +25,18 @@
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 20px;
+  font-weight: 400;
   color: $black-34;
   margin: 0;
   text-transform: uppercase;
+
+  &:hover {
+    opacity: 80%;
+  }
+
+  &:active {
+    opacity: 60%;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -44,11 +55,11 @@
     width: 135px;
     align-self: center;
     text-align: center;
-    margin-bottom: 16px;
+    margin-bottom: 20px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 23px;
+    margin-bottom: 19px;
   }
 }
 
@@ -61,6 +72,14 @@
   width: 140px;
   height: 107px;
   padding: 0 0 17px;
+
+  &:hover {
+    opacity: 80%;
+  }
+
+  &:active {
+    opacity: 60%;
+  }
 
 
   @media (min-width: $tablet-width) {

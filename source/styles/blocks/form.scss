@@ -6,17 +6,21 @@
   color: $dark-grey;
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
-  padding-left: 13px;
+  padding: 13px;
   margin-bottom: 16px;
   width: 280px;
   height: 56;
   border: 1px solid $benefits-border;
 
+
   &:focus {
-    border-color: $dark-grey;
+    border: 2px solid $dark-grey;
+    border-radius: 0;
   }
 
+  &:invalid {
+    border: 2px solid $form-error;
+  }
 
   @media (min-width: $tablet-width) {
     width: 376px;

@@ -4,6 +4,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
+    align-self: flex-start;
   }
 }
 
@@ -20,11 +21,13 @@
 }
 
 .logo-energy__text {
-  align-self: center;
-  margin-left: 56px;
+  margin-left: 55px;
+  padding-top: 12px;
 
   @media (min-width: $tablet-width) {
     margin-left: 13px;
+    padding-top: 0;
+    align-self: center;
   }
 
   @media (min-width: 1440px) {

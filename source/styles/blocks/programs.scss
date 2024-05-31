@@ -9,9 +9,12 @@
     &::before {
       content: "";
       background-color: $background-cat;
-      background-position: 0 0;
-
-      background-image: linear-gradient($green-transparent, $green-transparent), url("../../images/index/desktop/index-background-desktop.png");
+      background-image:
+        linear-gradient($green-transparent, $green-transparent),
+        image-set( url("../../images/index/desktop/index-background-desktop@1x.webp") type("image/webp") 1x,
+        url("../../images/index/desktop/index-background-desktop@2x.webp") type("image/webp") 2x,
+        url("../../images/index/desktop/index-background-desktop@1x.png") type("image/png") 1x,
+        url("../../images/index/desktop/index-background-desktop@2x.png") type("image/png") 2x);
       background-repeat: no-repeat;
       height: 694px;
       width: 50%;
@@ -46,9 +49,14 @@
 .programs__wrapper::before {
   content: "";
   background-color: $background-cat;
-  background-image: linear-gradient($green-transparent, $green-transparent), url("../../images/index/mobile/index-background-desktop_2.jpg");
+  background-image:
+    linear-gradient($green-transparent, $green-transparent),
+    image-set( url("../../images/index/mobile/background_cat_mobile@1x.webp") type("image/webp") 1x,
+    url("../../images/index/mobile/background_cat_mobile@1x.webp") type("image/webp") 2x,
+    url("../../images/index/mobile/background_cat_mobile@1x.jpg") type("image/png") 1x,
+    url("../../images/index/mobile/background_cat_mobile@2x.jpg") type("image/png") 2x);
   background-repeat: no-repeat;
-
+  background-size: contain;
   background-position: center;
   height: 302px;
   width: 100%;
@@ -91,6 +99,7 @@
   @media (min-width: $desktop-width) {
     padding: 0;
     padding-top: 110px;
+    width: 420px;
   }
 }
 
@@ -115,6 +124,7 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 52px;
+    width: 283px;
   }
 }
 
@@ -134,8 +144,7 @@
   @media (min-width: $desktop-width) {
     display: block;
     position: relative;
-    margin-left: 300px;
-    margin-top: -630px;
+    margin: -630px 0 0 300px;
   }
 }
 
@@ -158,9 +167,5 @@
     box-sizing: border-box;
     display: block;
     margin: 0;
-  }
-
-  @media (min-width: $desktop-width) {
-
   }
 }
