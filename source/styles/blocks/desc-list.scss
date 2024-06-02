@@ -22,7 +22,7 @@
   justify-content: space-between;
 
   @media (min-width: $tablet-width) {
-    border-bottom: 1px solid $benefits-border;
+    border-bottom: 1px solid $benefits-border-hover;
     padding: 0 0 4px;
     box-sizing: border-box;
   }

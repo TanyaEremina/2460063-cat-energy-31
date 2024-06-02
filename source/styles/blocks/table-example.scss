@@ -5,8 +5,10 @@
   color: $color-black;
   margin: 0;
   text-align: center;
-  margin-bottom: 9px;
   padding-top: 14px;
+  word-wrap: break-word;
+  width: 121px;
+
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
@@ -20,10 +22,14 @@
 }
 
 .table-example__item {
-  min-width: 124px;
-  border: 1px solid $benefits-border;
-  height: 56px;
+  border: 1px solid $benefits-border-hover;
   box-sizing: border-box;
+  width: 124px;
+  min-height: 56px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
 
 
   @media (min-width: $tablet-width) {
@@ -31,7 +37,12 @@
     padding-top: 15px;
     display: flex;
     flex-direction: column;
-    height: 72px;
+    min-height: 72px;
+    gap: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 0;
   }
 }
 
@@ -39,12 +50,14 @@
   text-align: center;
   background-color: $light-gray;
   width: 59px;
-  margin: 0 auto;
-  padding: 0 13px;
+  margin: 0 0 -13px;
+  padding: 0 14px;
+
 
   @media (min-width: $tablet-width) {
     background-color: $color-white;
     padding: 0 8px;
+    margin: 0 0 -8px;
     width: fit-content;
   }
 
@@ -61,6 +74,7 @@
   display: flex;
   gap: 32px;
   justify-content: space-between;
+  flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
     margin: 0 167px 102px 0;

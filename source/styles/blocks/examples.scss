@@ -55,6 +55,14 @@
   }
 }
 
+.examples__text br {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
 .table-example__item-text {
   font-size: 12px;
   line-height: 12px;

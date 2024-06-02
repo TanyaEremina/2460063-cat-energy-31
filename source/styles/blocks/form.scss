@@ -12,6 +12,11 @@
   height: 56;
   border: 1px solid $benefits-border;
 
+  &:hover {
+    border: 1px solid $benefits-border-hover;
+    border-radius: 0;
+  }
+
 
   &:focus {
     border: 2px solid $dark-grey;

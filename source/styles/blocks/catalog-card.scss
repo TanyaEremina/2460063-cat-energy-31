@@ -8,11 +8,11 @@
 
 .catalog-card__desc {
   grid-column: 2/4;
-  padding-bottom: 21px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 37px 33px;
+    padding: 0 37px 32px;
     width: 250px;
+    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
@@ -46,9 +46,8 @@
 
 .catalog-card__link {
   text-decoration: none;
-  width: 76px;
-  grid-column: 2/4;
-  padding-bottom: 14px;
+  grid-column: 2/3;
+  padding-bottom: 16px;
 
   @media (min-width: $tablet-width) {
     padding: 0;

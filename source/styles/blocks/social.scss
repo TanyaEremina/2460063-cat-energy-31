@@ -5,15 +5,7 @@
   display: flex;
   gap: 24px;
   justify-content: center;
-
-  @media (min-width: $tablet-width) {
-    justify-content: flex-end;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 0;
-    justify-content: flex-start;
-  }
+  flex-wrap: wrap;
 }
 
 .social__item-link-vk {

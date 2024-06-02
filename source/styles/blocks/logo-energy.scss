@@ -1,10 +1,17 @@
 .logo-energy {
   display: flex;
-  padding-top: 13px;
+  padding: 0 0 13px 20px;
+  gap: 56px;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
+    align-self: center;
+    gap: 12px;
     padding: 0;
-    align-self: flex-start;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 14px;
   }
 }
 
@@ -18,21 +25,4 @@
 
 .logo-energy__picture {
   display: block;
-}
-
-.logo-energy__text {
-  margin-left: 55px;
-  padding-top: 12px;
-
-  @media (min-width: $tablet-width) {
-    margin-left: 13px;
-    padding-top: 0;
-    align-self: center;
-  }
-
-  @media (min-width: 1440px) {
-    margin-left: 13px;
-    width: 118px;
-    height: 21px;
-  }
 }
