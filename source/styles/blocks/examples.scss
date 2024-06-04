@@ -21,6 +21,7 @@
     background-image: linear-gradient($color-white 22%, $light-gray 22%);
     padding: 0 110px 85px;
     max-width: 1440px;
+    position: relative;
   }
 }
 
@@ -63,18 +64,6 @@
   }
 }
 
-.table-example__item-text {
-  font-size: 12px;
-  line-height: 12px;
-  color: $dark-grey;
-  text-align: center;
-
-  @media (min-width: 768px) {
-    font-size: 14px;
-    line-height: 14px;
-  }
-}
-
 .examples__description {
   display: flex;
   flex-direction: column;
@@ -109,8 +98,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 74px;
-    margin: -523px 0 0 585px;
+    position: absolute;
+    top: 0;
+    right: 36px;
   }
 }
 

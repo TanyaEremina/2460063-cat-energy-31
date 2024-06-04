@@ -105,7 +105,8 @@
 
     @media (min-width: $desktop-width) {
       top: 129px;
-      left: 63%;
+      left: 50%;
+      transform: translateX(-50%);
     }
   }
 }

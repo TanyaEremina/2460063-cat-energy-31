@@ -21,6 +21,14 @@
   }
 }
 
+.contacts__logo-energy:hover {
+  opacity: 80%;
+}
+
+.contacts__logo-energy:active {
+  opacity: 60%;
+}
+
 .contacts__logo-academy {
   display: flex;
   justify-content: space-between;

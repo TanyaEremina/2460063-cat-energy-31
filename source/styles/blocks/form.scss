@@ -10,22 +10,24 @@
   margin-bottom: 16px;
   width: 280px;
   height: 56;
-  border: 1px solid $benefits-border;
+  border: 0;
+  outline: 2px solid $benefits-border;
+
 
   &:hover {
-    border: 1px solid $benefits-border-hover;
     border-radius: 0;
+    outline: 1px solid $benefits-border-hover;
   }
-
 
   &:focus {
-    border: 2px solid $dark-grey;
+    outline: 2px solid $dark-grey;
     border-radius: 0;
   }
 
-  &:invalid {
-    border: 2px solid $form-error;
+  &:required:user-invalid {
+    outline: 2px solid $form-error;
   }
+
 
   @media (min-width: $tablet-width) {
     width: 376px;
